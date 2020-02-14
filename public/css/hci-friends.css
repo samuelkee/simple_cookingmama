@@ -41,3 +41,26 @@ img {
 .project a {
      text-align: center;
 }
+
+h1.navbar-brand{
+     font-size: x-large;
+     text-align: left;
+     float: left;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: bold;
+}
+.navbar{
+     height: 40px;
+}
+.button{
+     border-radius:10px;
+     padding-top:10px;
+     margin-bottom:5px;
+     background-color: orangered;
+     border:none;
+     color: black;
+     
+}
+.empty {
+     padding-top:40px ;
+}
