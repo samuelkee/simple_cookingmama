@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Cooking mama</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/hci-friends.css" rel="stylesheet">
+	<script src = "js/jquery-1.11.0.js"></script>
+	<script src = "js/bootstrap.js"></script>
+	<script src = "js/hci-friends.js"></script>
+</head>
+
+<body>
+	<div class = "container">
+	<h1>Cooking mama</h1>
+	{{#each friends}}
+      <div class="friend" id="{{name}}">
+		  <img src="{{imageURL}}" class="img-rounded">
+		  <a href="project/{{name}}" class="">
+		  <h3>{{name}}</h3>
+		  <p>{{description}}</p>
+		  </a>
+      </div>
+    {{/each}}
+	
+	</div>
+</body>
+</html>
