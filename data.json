@@ -4,6 +4,18 @@
 			"name": "Garlic Butter Steak",
 			"description": "A tried and true formula",
 			"imageURL": "img/steak.jpeg"
+		},
+		
+		{
+			"name": "Burger",
+			"description": "Juicy and delightful",
+			"imageURL": "img/burger.jpeg"
+		},
+
+		{
+			"name": "Salad",
+			"description": "A healthy choice",
+			"imageURL": "img/salad.jpeg"
 		}
 	]
 }

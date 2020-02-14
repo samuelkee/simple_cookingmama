@@ -17,22 +17,7 @@ img {
 	width: 200px;
 }
 
-.jumbotron {
-	position: relative;
-	background: none;
-}
 
-.jumbotron:after {
-     content:"";
-     background: url("../images/lorempixel.jumbotron.jpeg");
-     opacity: 0.2;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
-     position: absolute;
-     z-index: -1;	
-}
 
 .jumbotron p {
      color: #6e6e6e;
@@ -40,6 +25,11 @@ img {
 
 .project a {
      text-align: center;
+}
+
+#b {
+     text-align: center;
+     width: 40px;
 }
 
 h1.navbar-brand{
@@ -62,5 +52,44 @@ h1.navbar-brand{
      
 }
 .empty {
-     padding-top:40px ;
+     padding-top:40px;
+}
+
+hr {
+     
+     height: 0.5px;
+     color: gray;
+     background-color: gray;
+     margin: 5px;
+     padding-bottom: 5px;
+
+}
+.container{
+     display: flex;
+     flex-direction: row;
+     text-align: right;
+}
+
+.containerTwo {
+
+}
+
+.playButton {
+     height: 40px;
+     width: 40px;
+}
+
+h2 .test{
+     float: left;
+     padding-right: 20px;
+}
+.facebookLogin{
+     padding-top: 25px;
+}
+.profilePhoto{
+     height: 40px;
+     width: 40px;
+     border:none;
+     margin-left: 8px;
+     margin-top: 20px;
 }
