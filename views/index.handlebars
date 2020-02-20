@@ -16,14 +16,14 @@
 </head>
 
 <body>
+	<div class='top'>
 	<div class ="container">
-		<h2 class ="test"><img src="../img/cookingmamabrand.png" id = "b">                     Cooking Mama
-			</h2>
-			<fb:login-button class="facebookLogin" scope="public_profile,email" onlogin="checkLoginState();">
-				</fb:login-button>
-				<img class="profilePhoto" src="img/facebook-default-no-profile-pic1.jpg">
-				<p class = "nameTest">No name</p>	
-				<script> console.log("hi"); </script>
+		<h2 class ="test" id='logo'><img src="../img/cookingmamabrand.png" id = "b">Cooking Mama
+			</h2>	
+	</div>
+		<img class="profilePhoto" src="img/facebook-default-no-profile-pic1.jpg">
+		<fb:login-button class="facebookLogin" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+		<p class = "nameTest">No name</p>
 	</div>
 		
 <hr>
@@ -38,6 +38,38 @@
 		</script>
     {{/each}}
 	</b>
+
+	<b class = "guestUser">
+		
+	</b>
+
+	<loggedIn>
+		
+	</loggedIn>
+
+<c>
+<form id="addFriendForm" role="form" method="get" action="/add">
+			<h3>Add a recipe</h3>
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" class="form-control" id="name" placeholder="Name" name="name">
+			</div>
+			<div class="form-group">
+				<label for="description">Short Description:</label>
+				<input type="text" class="form-control" id="shortDescription" placeholder="Short Description" name="shortDescription">
+			</div>
+			<div class="form-group">
+				<label for="ingredients">Ingredients:</label>
+				<input type="text" class="form-control" id="ingredients" placeholder="Ingredients" name="ingredients">
+			</div>
+			<div class="form-group">
+				<label for="description">Description:</label>
+				<input type="text" class="form-control" id="description" placeholder="Description" name="description">
+			</div>
+			<input type="submit" id="submitBtn" class="btn btn-default" value="Add the recipe"></input>
+		</form>
+</c>
+
 
 </body>
 </html>

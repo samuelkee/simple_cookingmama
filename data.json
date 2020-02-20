@@ -4,14 +4,14 @@
 			"userName": "Samuel Kee",
 			"formula": [
 				{
-					"name": "Samuel 1",
+					"name": "Steak",
 					"description": "A tried and true formula",
 					"imageURL": "img/steak.jpeg",
 					"test": "<li>Preheat oven to 200°F (95°C).</li> <li>Generously season all sides of the steak with salt and pepper.</li>"
 				},
 
 				{
-					"name": "Samuel 2",
+					"name": "Salad",
 					"description": "A healthy choice",
 					"imageURL": "img/salad.jpeg"
 				}
@@ -22,24 +22,51 @@
 			"userName": "No name",
 			"formula": [
 				{
-					"name": "Guest 1",
+					"name": "Steak",
 					"description": "A tried and true formula",
 					"imageURL": "img/steak.jpeg",
 					"test": "this is a test"
 				},
 
 				{
-					"name": "Guest 2",
+					"name": "Burger",
 					"description": "Juicy and delightful",
 					"imageURL": "img/burger.jpeg"
 				},
 
 				{
-					"name": "Guest 3",
+					"name": "Salad",
 					"description": "A healthy choice",
 					"imageURL": "img/salad.jpeg"
 				}
 			]	
 		}
+	],
+
+	"recipe": [
+		{
+			"name": "Steak",
+			"description": "A tried and true formula",
+			"imageURL": "img/steak.jpeg",
+			"ingredients": "1 ribeye steak, 2 inch (5 cm) thick, preferably USDA Prime salt, to taste pepper, to taste 3 tablespoons canola oil 3 tablespoons butter 3 cloves garlic, peeled and smashed 2 sprigs fresh rosemary 3 sprigs fresh thyme",
+			"preparation": "Preheat oven to 200°F (95°C). Generously season all sides of the steak with salt and pepper."
+		},
+
+		{
+			"name": "Burger",
+			"description": "Juicy and delightful",
+			"imageURL": "img/burger.jpeg",
+			"ingredients": "egg, mustard, worcestershire sauce, small onion, garlic, salt, pepper, ground beef",
+			"preparation": "Lightly oil grill& heat BBQ to medium. Whisk egg in a bowl& add next 6 ingredients. Add any of the “stir-ins” that appeal to you. Crumble in beef& using your hands or a fork, gently mix together. Handle the meat as little as possible – the more you work it, the tougher it gets. Gently shape (don’t firmly press) mixture into burgers about ¾ inch thick. Using your thumb, make a shallow depression in the centre of each burger to prevent puffing up during cooking. Place burgers on the grill, close lid& BBQ until NO LONGER PINK INSIDE, turning once, about 6 – 8 minutes per side. An instant read thermometer should read 160F. Don't abuse your burgers by pressing with a spatula, pricking with a fork or turning frequently as precious juices will be lost! Tuck into a warm crusty bun& add your favourite toppings."
+		},
+
+		{
+			"name": "Salad",
+			"description": "A healthy choice",
+			"imageURL": "img/salad.jpeg",
+			"ingredients": "Olive oil, lemon juice, dijon mustard, garlic, sea salt, freshly-cracked black pepper",
+			"preparation": "To make the salad dressing recipe, just whisk all of the ingredients together in a bowl (or shake them up in a mason jar) until combined. Combine them in a large bowl, drizzle evenly with the dressing, then toss lightly until combined. Serve!"
+		}
+
 	]
 }

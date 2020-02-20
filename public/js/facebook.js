@@ -24,8 +24,10 @@ function changeUser(response) {
     $(".profilePhoto").attr("src", response.picture.data.url);
     $(".nameTest").text(response.name);
     $('b').hide();
-    console.log("front end sucks");
+    $('c').show();
+    var data = require("../data.json");
     
-
+    $('loggedIn').show();
+    
     //localStorage.setItem('user-name', response.name)
 }

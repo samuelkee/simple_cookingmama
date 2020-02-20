@@ -27,21 +27,22 @@ img {
      text-align: center;
 }
 
-#b {
-     text-align: center;
+#logo {
+     float: left;
+     text-align: left;
+     font-size: 32px;
+     font-family: 'Montserrat', sans-serif;
+     padding-top: 25px;
+     margin: 0px;
+     color: white;
+}
+#b{
      width: 40px;
+     float: left;
+     
 }
 
-h1.navbar-brand{
-     font-size: x-large;
-     text-align: left;
-     float: left;
-     font-family: 'Montserrat', sans-serif;
-     font-weight: bold;
-}
-.navbar{
-     height: 40px;
-}
+
 .button{
      border-radius:10px;
      padding-top:10px;
@@ -56,23 +57,24 @@ h1.navbar-brand{
 }
 
 hr {
-     
      height: 0.5px;
-     color: gray;
-     background-color: gray;
+     color:orangered;
+     background-color: orangered;
      margin: 5px;
-     padding-bottom: 5px;
+     
+     padding-bottom: 2px;
 
+}
+.top{
+     background-color: black;
 }
 .container{
      display: flex;
      flex-direction: row;
      text-align: right;
+     position: relative;
 }
 
-.containerTwo {
-
-}
 
 .playButton {
      height: 40px;
@@ -81,19 +83,26 @@ hr {
 
 h2 .test{
      float: left;
-     padding-right: 20px;
+     padding-right: 0px;
 }
 .facebookLogin{
-     padding-top: 25px;
+    position: absolute;
+    top: -20px;
+    left: 300px;
 }
 .profilePhoto{
+     position: absolute;
      height: 40px;
      width: 40px;
-     border:none;
-     margin-left: 8px;
-     margin-top: 20px;
+     left: 366px;
+     top: 30px
 }
-
+.nameTest{
+     position:absolute;
+     top:10px;
+     right: 10px;
+     color: wheat;
+}
 
 #play {
      background: none;
@@ -126,4 +135,13 @@ h2 .test{
      padding: 1;
      width: 48px;
      background-image: url(../img/stop1.svg);
+}
+.reloading{
+     text-align: center;
+     padding-top: 10px;
+}
+.friend{
+     border: 2px gray;
+     border-style: groove;
+     background-color: #f5f5f5;
 }
