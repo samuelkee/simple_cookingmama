@@ -21,8 +21,11 @@ function statusChangeCallback(response) {
 
 function changeUser(response) {
     $(".facebookLogin").hide();
-
     $(".profilePhoto").attr("src", response.picture.data.url);
+    $(".nameTest").text(response.name);
+    $('b').hide();
+    console.log("front end sucks");
+    
 
     //localStorage.setItem('user-name', response.name)
 }

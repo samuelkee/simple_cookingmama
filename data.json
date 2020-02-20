@@ -1,21 +1,45 @@
 {
 	"friends": [
 		{
-			"name": "Garlic Butter Steak",
-			"description": "A tried and true formula",
-			"imageURL": "img/steak.jpeg"
-		},
-		
-		{
-			"name": "Burger",
-			"description": "Juicy and delightful",
-			"imageURL": "img/burger.jpeg"
+			"userName": "Samuel Kee",
+			"formula": [
+				{
+					"name": "Samuel 1",
+					"description": "A tried and true formula",
+					"imageURL": "img/steak.jpeg",
+					"test": "<li>Preheat oven to 200°F (95°C).</li> <li>Generously season all sides of the steak with salt and pepper.</li>"
+				},
+
+				{
+					"name": "Samuel 2",
+					"description": "A healthy choice",
+					"imageURL": "img/salad.jpeg"
+				}
+			]	
 		},
 
 		{
-			"name": "Salad",
-			"description": "A healthy choice",
-			"imageURL": "img/salad.jpeg"
+			"userName": "No name",
+			"formula": [
+				{
+					"name": "Guest 1",
+					"description": "A tried and true formula",
+					"imageURL": "img/steak.jpeg",
+					"test": "this is a test"
+				},
+
+				{
+					"name": "Guest 2",
+					"description": "Juicy and delightful",
+					"imageURL": "img/burger.jpeg"
+				},
+
+				{
+					"name": "Guest 3",
+					"description": "A healthy choice",
+					"imageURL": "img/salad.jpeg"
+				}
+			]	
 		}
 	]
 }

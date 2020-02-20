@@ -10,6 +10,7 @@
 	<script src = "js/jquery-1.11.0.js"></script>
 	<script src = "js/bootstrap.js"></script>
 	<script src = "js/hci-friends.js"></script>
+	
 	{{> facebook}}
 	<script src="/js/facebook.js"></script>
 </head>
@@ -17,26 +18,26 @@
 <body>
 	<div class ="container">
 		<h2 class ="test"><img src="../img/cookingmamabrand.png" id = "b">                     Cooking Mama
-		
-			
 			</h2>
 			<fb:login-button class="facebookLogin" scope="public_profile,email" onlogin="checkLoginState();">
 				</fb:login-button>
-				<img class="profilePhoto" src="img/facebook-default-no-profile-pic1.jpg">	
-			</div>
+				<img class="profilePhoto" src="img/facebook-default-no-profile-pic1.jpg">
+				<p class = "nameTest">No name</p>	
+				<script> console.log("hi"); </script>
+	</div>
 		
 <hr>
+	<b class = "reloading">
 	{{#each friends}}
-      <div class="friend" id="{{name}}">
-		  <img src="{{imageURL}}" class="img-rounded">
-		  <a href="project/{{name}}" class="">
-		  <h3>{{name}}</h3>
-		  <p>{{description}}</p>
-		  </a>
-      </div>
+		<script>
+			naming = $(".nameTest").text();
+			console.log(naming);
+		  if ("{{userName}}" === naming) {
+			document.write('{{#each formula}}<div class="friend" id="{{name}}"> <img src="{{imageURL}}" class="img-rounded"> <a href="project/{{name}}" class=""> <h3>{{name}}</h3> <p>{{description}}</p> </a> </div>{{/each}}' );
+		  }
+		</script>
     {{/each}}
-	
-	</div>
+	</b>
+
 </body>
 </html>
-`

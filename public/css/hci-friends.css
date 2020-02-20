@@ -93,3 +93,37 @@ h2 .test{
      margin-left: 8px;
      margin-top: 20px;
 }
+
+
+#play {
+     background: none;
+     border: none;
+     cursor: pointer;
+     height: 48px;
+     outline: none;
+     padding: 1;
+     width: 48px;
+     background-image: url(../img/play1.svg);
+}
+
+#pause {
+     background: none;
+     border: none;
+     cursor: pointer;
+     height: 48px;
+     outline: none;
+     padding: 1;
+     width: 48px;
+     background-image: url(../img/pause1.svg);
+}
+
+#stop {
+     background: none;
+     border: none;
+     cursor: pointer;
+     height: 48px;
+     outline: none;
+     padding: 1;
+     width: 48px;
+     background-image: url(../img/stop1.svg);
+}
