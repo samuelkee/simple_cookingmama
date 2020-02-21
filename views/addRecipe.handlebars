@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Cooking mama</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/hci-friends.css" rel="stylesheet">
+	<script src = "js/jquery-1.11.0.js"></script>
+	<script src = "js/bootstrap.js"></script>
+	<script src = "js/hci-friends.js"></script>
+	
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
+</head>
+
+<body>
+	
+
+<c>
+<form id="addFriendForm" role="form" method="get" action="/add">
+			<h3>Add a recipe</h3>
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" class="form-control" id="name" placeholder="Name" name="name">
+			</div>
+			<div class="form-group">
+				<label for="description">Short Description:</label>
+				<input type="text" class="form-control" id="shortDescription" placeholder="Short Description" name="shortDescription">
+			</div>
+			<div class="form-group">
+				<label for="ingredients">Ingredients:</label>
+				<input type="text" class="form-control" id="ingredients" placeholder="Ingredients" name="ingredients">
+			</div>
+			<div class="form-group">
+				<label for="description">Description:</label>
+				<input type="text" class="form-control" id="description" placeholder="Description" name="description">
+			</div>
+			<input type="submit" id="submitBtn" class="btn btn-default" value="Add the recipe"></input>
+		</form>
+</c>
+
+
+</body>
+</html>

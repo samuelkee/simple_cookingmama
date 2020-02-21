@@ -17,6 +17,7 @@ function initializePage() {
     });
 }
 
+
 function anagrammedName(name) {
 	// Thanks, Internet Anagram Server!
 	if (name == "Doug Engelbart") {
