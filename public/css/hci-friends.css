@@ -13,9 +13,7 @@ h1, h2, h3, h4, h5 {
 	color: #8382BF;
 }
 
-img {
-	width: 200px;
-}
+
 
 
 
@@ -87,7 +85,7 @@ h2 .test{
 }
 .facebookLogin{
     position: absolute;
-    top: -20px;
+    top: -16px;
     left: 300px;
 }
 .profilePhoto{
@@ -103,15 +101,18 @@ h2 .test{
      right: 10px;
      color: wheat;
 }
+.img-rounded{
+     width: 411px;
+}
 
 #play {
      background: none;
      border: none;
      cursor: pointer;
-     height: 48px;
+     height: 40px;
      outline: none;
      padding: 1;
-     width: 48px;
+     width: 40px;
      background-image: url(../img/play1.svg);
 }
 
@@ -119,10 +120,10 @@ h2 .test{
      background: none;
      border: none;
      cursor: pointer;
-     height: 48px;
+     height: 40px;
      outline: none;
      padding: 1;
-     width: 48px;
+     width: 40px;
      background-image: url(../img/pause1.svg);
 }
 
@@ -130,10 +131,10 @@ h2 .test{
      background: none;
      border: none;
      cursor: pointer;
-     height: 48px;
+     height: 40px;
      outline: none;
      padding: 1;
-     width: 48px;
+     width: 40px;
      background-image: url(../img/stop1.svg);
 }
 .reloading{
@@ -144,4 +145,66 @@ h2 .test{
      border: 2px gray;
      border-style: groove;
      background-color: #f5f5f5;
+     font-family: 'Montserrat';
+}
+.friend h3{
+     font-family: 'Montserrat';
+     color: black;
+     text-decoration: underline;
+}
+.friend p{
+     color: #6e6e6e;
+}
+
+#backButt{
+     position:absolute;
+     right: 0px;
+     color: white;
+}
+.ingHead{
+     background-color: black;
+     color:lightgrey;
+}
+.ingHead h1{
+     color:white;
+     font-family: 'Montserrat';
+     font-weight: bold;
+}
+.ingHead p{
+     margin: 0px;
+}
+#projPic{
+     width: 411px;
+     height: 300px;
+}
+#ingTitle{
+     padding-top: 20px;
+     font-family: 'Montserrat';
+     font-size: 30px;
+     text-decoration: underline;
+     color: black;
+}
+.recBody{
+     font-size: 15px;
+}
+.imgDiv{
+     padding-bottom: 10px;
+}
+.addHead{
+     background-color: black;
+     padding-top: 5px;
+     text-align: center;
+     padding-bottom: 1px;
+}
+.addHead h3{
+     color: white;
+     font-family: 'Montserrat';
+     font-size: 35px;
+}
+.addHead img{
+     position: absolute;
+     left: 50px;
+}
+.form-group{
+     font-family: 'Montserrat';
 }

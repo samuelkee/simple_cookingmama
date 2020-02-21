@@ -10,6 +10,7 @@
 	<script src = "js/jquery-1.11.0.js"></script>
 	<script src = "js/bootstrap.js"></script>
 	<script src = "js/hci-friends.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 	
 	{{> facebook}}
 	<script src="/js/facebook.js"></script>
@@ -23,10 +24,9 @@
 	</div>
 		<img class="profilePhoto" src="img/facebook-default-no-profile-pic1.jpg">
 		<fb:login-button class="facebookLogin" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
-		<p class = "nameTest">No name</p>
+		<p class = "nameTest">Guest</p>
 	</div>
 		
-<hr>
 	<b class = "reloading">
 	{{#each friends}}
 		<script>
