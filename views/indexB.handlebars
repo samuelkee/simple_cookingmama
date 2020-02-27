@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Cooking mama</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/hci-friends.css" rel="stylesheet">
+	<script src = "js/jquery-1.11.0.js"></script>
+	<script src = "js/bootstrap.js"></script>
+	<script src = "js/hci-friends.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
+</head>
+
+<body>
+	<div class='top'>
+	<div class ="container">
+		<h2 class ="test" id='logo'><img src="../img/cookingmamabrand.png" id = "b">Cooking Mama
+			</h2>	
+	</div>
+		<input type='image' class="profilePhoto" src="../img/orangebutton.png" onclick="location.href='./addRecipe';">
+		<fb:login-button class="facebookLogin" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+		<p class = "nameTest">Guest</p>
+	</div>
+		
+	<b class = "reloading">
+	{{#each friends}}
+		<script>
+			naming = $(".nameTest").text();
+			console.log(naming);
+		  if ("{{userName}}" === naming) {
+			document.write('{{#each formula}}<div class="friend" id="{{name}}"> <img src="{{imageURL}}" class="img-rounded"> <a href="project/{{name}}" class=""> <h3>{{name}}</h3> <p>{{description}}</p> </a> </div>{{/each}}' );
+		  }
+		</script>
+    {{/each}}
+	</b>
+
+	<b class = "guestUser">
+		
+	</b>
+
+	<loggedIn>
+		
+	</loggedIn>
+
+	{{!-- <a href="./addRecipe">add recipe</a> --}}
+
+</body>
+</html>
