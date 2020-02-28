@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/../css/bootstrap.css" rel="stylesheet">
+    <link href="/../css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/../css/hci-friends.css" rel="stylesheet">
+
+    <script src="/../js/script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <script src="/js/introHCI.js"></script> -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<!-- this is a comment in HTML -->
+	<div class="containerTwo">
+    	<a href ="/indexB/"><button class="button" href="/indexB/" type="button" id='backButt'><p>Back</p></button></a>
+	 <div class="ingHead">
+      <h1>{{projectName}}</h1>
+      <p>{{projectDesc}}</p>
+    </div>
+<div class='imgDiv'>
+<img id='projPic' src="../../{{imageURL}}">
+</div>
+<div>
+		<button id=play></button> &nbsp;
+		<button id=pause></button> &nbsp;
+		<button id=stop></button>
+	</div>
+    <h2 id='ingTitle'>Ingredients</h2>
+    <p class='recBody'>{{projectIng}}</p>
+		<p></p>
+
+		<h2 id='ingTitle'>Preparation</h2>
+    <ul>
+
+<article>
+<p class='recBody'>{{projectInst}}</p>
+</article>
+	
+    <br>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+
+
+
+    {{#each recipe}}
+    <h1>hello</h1>
+    {{/each}}
+  </body>
+</html>
