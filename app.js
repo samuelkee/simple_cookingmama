@@ -46,7 +46,7 @@ app.get('/indexA', indexA.view);
 app.get('/indexB', indexB.view);
 app.get('/addRecipe', addRecipe.addRecipe);
 app.get('/project/:name', project.viewProject); 
-app.get('/indexB/project/:name', projectB.viewProject);
+app.get('/indexB/projectB/:name', projectB.viewProject);
 app.get('/add', add.add);
 
 // Example route

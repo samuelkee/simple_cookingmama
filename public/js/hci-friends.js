@@ -14,6 +14,14 @@ function initializePage() {
 		name = $(this).text();
 		console.log(name);
         $(this).text(anagrammedName(name));
+	});
+	
+	$('.aBtn').click(function(e) {
+        ga("send", "event", "A", "click");
+	});
+	
+	$('.profilePhoto').click(function(e) {
+        ga("send", "event", "B", "click");
     });
 }
 
