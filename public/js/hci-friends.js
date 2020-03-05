@@ -17,11 +17,19 @@ function initializePage() {
 	});
 	
 	$('.aBtn').click(function(e) {
-        ga("send", "event", "A", "click");
+        ga("send", "event", "A_recipe", "click");
 	});
 	
 	$('.profilePhoto').click(function(e) {
-        ga("send", "event", "B", "click");
+        ga("send", "event", "B_recipe", "click");
+	});
+
+	$('.friend').click(function(e) {
+        ga("send", "event", "A_formula", "click");
+	});
+
+	$('.friend_b').click(function(e) {
+        ga("send", "event", "B_formula", "click");
     });
 }
 
