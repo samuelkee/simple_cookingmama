@@ -15,7 +15,8 @@
 	{{> facebook}}
 	<script src="/js/facebook.js"></script>
 
-	<!-- Google Analytics -->
+
+<!-- Google Analytics -->
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -33,19 +34,20 @@ ga('send', 'pageview');
 	<div class ="container">
 		<h2 class ="test" id='logo'><img src="../img/cookingmamabrand.png" id = "b">Cooking Mama
 			</h2>	
+			
 	</div>
-		<img class="profilePhoto" src="img/facebook-default-no-profile-pic1.jpg">
-		<fb:login-button class="facebookLogin" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+		<input type='image' class="profilePhoto" src="../img/orangebutton.png" onclick="location.href='./addRecipe';">
+		<span class='facebookLogin'><fb:login-button  scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button></span>
 		<p class = "nameTest">Guest</p>
 	</div>
-		
+	
 	<b class = "reloading">
 	{{#each friends}}
 		<script>
 			naming = $(".nameTest").text();
 			console.log(naming);
 		  if ("{{userName}}" === naming) {
-			document.write('{{#each formula}}<div class="friend" id="{{name}}"> <img src="{{imageURL}}" class="img-rounded"> <a href="project/{{name}}" class=""> <h3>{{name}}</h3> <p>{{description}}</p> </a> </div>{{/each}}' );
+			document.write('{{#each formula}}<div class="friend_b" id="{{name}}">  <a href="indexB/projectB/{{name}}" class=""><img src="{{imageURL}}" class="img-rounded"> <h3>{{name}}</h3> <p>{{description}}</p> </a> </div>{{/each}}' );
 		  }
 		</script>
     {{/each}}
@@ -59,9 +61,7 @@ ga('send', 'pageview');
 		
 	</loggedIn>
 
-	<a href="./addRecipe" class="aBtn">add recipe</a>
-
-
+	
 
 
 

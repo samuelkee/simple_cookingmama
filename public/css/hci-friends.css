@@ -28,16 +28,15 @@ h1, h2, h3, h4, h5 {
 #logo {
      float: left;
      text-align: left;
-     font-size: 32px;
+     font-size: 8vw;
      font-family: 'Montserrat', sans-serif;
-     padding-top: 25px;
+     padding-top: 15px;
      margin: 0px;
      color: white;
 }
 #b{
-     width: 40px;
-     float: left;
-     
+   padding-right: 8px;  
+   padding-bottom: 8px;
 }
 
 
@@ -64,45 +63,58 @@ hr {
 
 }
 .top{
+     position: static;
      background-color: black;
 }
 .container{
      display: flex;
      flex-direction: row;
      text-align: right;
-     position: relative;
+     position: static;
+     padding-bottom: 10px;
 }
-
+.container h2{
+     top: 10px;
+}
+h2 #b{
+     width: 100%;
+     max-width: 40px;
+     
+}
 
 .playButton {
      height: 40px;
      width: 40px;
 }
 
-h2 .test{
-     float: left;
-     padding-right: 0px;
-}
+
 .facebookLogin{
-    position: absolute;
-    top: -16px;
-    left: 300px;
+     display: inline-block; 
+     height: 30px; 
+     overflow: hidden; 
+     position: absolute; 
+     top: 25px; 
+     right: 8px;
+     width: 25px;
 }
+
 .profilePhoto{
      position: absolute;
-     height: 40px;
-     width: 40px;
-     left: 375px;
-     top: 30px
+     width: 100%;
+     max-width: 25px;
+     right: 50px;
+     top: 23px;
+     
 }
 .nameTest{
      position:absolute;
-     top:10px;
+     top:0px;
      right: 10px;
      color: wheat;
 }
 .img-rounded{
-     width: 411px;
+     width: 100%;
+     border-radius: 0%;
 }
 
 #play {
@@ -147,13 +159,15 @@ h2 .test{
      background-color: #f5f5f5;
      font-family: 'Montserrat';
 }
-.friend h3{
+.friend_b h3{
      font-family: 'Montserrat';
      color: black;
-     text-decoration: underline;
+     font-size: 7vw;
+     
 }
-.friend p{
+.friend_b p{
      color: #6e6e6e;
+     font-size: 3vw;
 }
 
 #backButt{
@@ -207,4 +221,11 @@ h2 .test{
 }
 .form-group{
      font-family: 'Montserrat';
+}
+.addRec{
+     right: 10px;
+}
+.recContainer{
+     position: relative;
+     background-color:black;
 }
