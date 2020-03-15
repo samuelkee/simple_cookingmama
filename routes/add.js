@@ -10,9 +10,11 @@ exports.add = function(request, response) {
     var shortDescription = request.query.shortDescription;
     var ingredients = request.query.ingredients;
     var description = request.query.description;
+    var imageURL = request.query.image;
+    console.log("image url: " + imageURL);
     var newRecipe = { "name": name, 
     "description": shortDescription, 
-    "imageURL": "http://lorempixel.com/400/400/people",
+    "imageURL": imageURL,
     "ingredients": ingredients,
     "preparation": description
     };
@@ -21,7 +23,7 @@ exports.add = function(request, response) {
 
     var newRecipeOverview = {"name": name,
     "description": shortDescription,
-    "imageURL": "http://lorempixel.com/400/400/people"
+    "imageURL": imageURL
     }
 
     /*for (x in data.friends) {
